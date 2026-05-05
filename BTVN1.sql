@@ -7,6 +7,7 @@ Age INT,
 Room_Number INT,
 HIV_Status VARCHAR(50),
 Mental_Health_History VARCHAR(255)
+
 );
 INSERT INTO Patients (Patient_ID, Full_Name, Age, Room_Number, HIV_Status, Mental_Health_History)
 VALUES
@@ -21,3 +22,7 @@ WHERE Age > 0
 WITH CHECK OPTION;
 
 SELECT * FROM Reception_Patient_View;
+UPDATE Reception_Patient_View
+SET Age = 10;
+Update Reception_Patient_View
+SET Age = -1;
